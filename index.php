@@ -1,4 +1,17 @@
 <?php $page = 'home'; ?>
+<?php
+$items = [
+    ["title" => "Ball Valves", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Butterfly Valves", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Gate Valves", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Globe Valves", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Check Valves", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Control & Relief Valves", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Actuators and Controls", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+    ["title" => "Actuated Industrial Dampeners", "image" => "web-assets/images/ball-valves.jpg", "description" => "Lorem ipsum dolor sit amet, con ectetur a suhg vuihs"],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +27,6 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
 </head>
 
 <body>
@@ -24,10 +36,11 @@
             <div class="containerFull">
                 <div class="banner_home_inner">
                     <div>
-                        <h1 class="large_heading fontHeading fontWeight800 text-center">
+                        <h1 class="large_heading fontHeading fontWeight800 text-center" data-aos="fade-up"
+                            data-aos-duration="1000">
                             Aryazenic Resourcezenic Pvt Ltd
                         </h1>
-                        <h2 class="mt-3 text-center">
+                        <h2 class="mt-3 text-center" data-aos="fade-up" data-aos-duration="1100">
                             Innovation with reliable solutions
                         </h2>
 
@@ -41,7 +54,7 @@
                 </div>
 
             </div>
-            <div class="banner_slider">
+            <!-- <div class="banner_slider">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -61,36 +74,36 @@
                                 class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button> -->
+                 
                 </div>
+            </div> -->
+            <div class="banner_video">
+                <video src="web-assets/images/banner.mp4" autoplay="" loop="" muted=""
+                    poster="web-assets/images/banner-poster1.jpg">
+
+                </video>
+
             </div>
+
         </div>
     </div>
     <section class="about_section">
         <div class="containerFull">
-            <div class="row">
+            <div class="row overflow-hidden">
                 <div class="col-lg-6 ">
-                    <small class="text_secondary fontWeight600">
+                    <p class="text_secondary fontWeight600" data-aos="fade-right" data-aos-duration="1000">
                         About us
-                    </small>
-                    <h4 class="fontHeading mt-3  heading fontWeight700 h_underline">
+                    </p>
+                    <h4 class="fontHeading mt-3  heading fontWeight700 h_underline" data-aos="fade-right"
+                        data-aos-duration="1000">
                         Who we are
                     </h4>
-                    <p class="mt-5">
+                    <p class="mt-5" data-aos="fade-up" data-aos-duration="1000">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloremque facere placeat
                         hic consectetur. Quae dolor sint ea sunt. Et expedita autem molestiae nemo quidem fugiat libero,
                         veritatis quae esse.
                     </p>
-                    <p class="mt-3">
+                    <p class="mt-3" data-aos="fade-up" data-aos-duration="1000">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum officiis reiciendis enim
                         illum, reprehenderit labore doloribus iure aspernatur magnam quis alias voluptas adipisci totam
                         temporibus voluptate atque illo iste? Quia excepturi officiis quasi delectus possimus illum
@@ -98,14 +111,14 @@
                         laboriosam recusandae provident eius hic?
 
                     </p>
-                    <div class="mt-5">
+                    <div class="mt-5" data-aos="fade-up" data-aos-duration="1000">
                         <a class="btn_1" href="">Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
                         <a class="btn_3 ms-2" href=""><i class="fa-solid fa-phone me-2"></i> +91-9192939940</a>
                     </div>
 
                 </div>
                 <div class="col-lg-6 ps-5">
-                    <div class="img_box">
+                    <div class="img_box" data-aos="fade-left" data-aos-duration="1000">
 
                         <img src="web-assets/images/aboutImg.png" alt="">
                     </div>
@@ -121,14 +134,14 @@
         <div class="containerFull">
             <div class=" row">
                 <div class="col-lg-6">
-                    <div class="img_box">
+                    <div class="img_box" data-aos="zoom-in" data-aos-duration="1000">
 
                         <img src="web-assets/images/mission.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 ">
 
-                    <div class="shadow  item_vission ">
+                    <div class="shadow  item_vission " data-aos="fade-up" data-aos-duration="1000">
                         <h4 class="h_underline fontWeight700">
                             Our Mission
                         </h4>
@@ -138,7 +151,7 @@
                         </p>
 
                     </div>
-                    <div class="shadow  item_vission mt-4">
+                    <div class="shadow  item_vission mt-4" data-aos="fade-up" data-aos-duration="1100">
                         <h4 class="h_underline fontWeight700">
                             Our Vision
                         </h4>
@@ -159,7 +172,7 @@
 
     </section>
     <div class="core_values row row-cols-lg-4  w-100">
-        <div class="item_row">
+        <div class="item_row" data-aos="fade-up" data-aos-duration="1000">
             <div class="img_box">
                 <img src="web-assets/images/icon/protection.png" alt="">
             </div>
@@ -168,7 +181,7 @@
             </h4>
 
         </div>
-        <div class="item_row">
+        <div class="item_row" data-aos="fade-up" data-aos-duration="1500">
             <div class="img_box">
                 <img src="web-assets/images/icon/engagement.png" alt="">
             </div>
@@ -177,7 +190,7 @@
             </h4>
 
         </div>
-        <div class="item_row">
+        <div class="item_row" data-aos="fade-up" data-aos-duration="2000">
             <div class="img_box">
                 <img src="web-assets/images/icon/employee.png" alt="">
             </div>
@@ -186,7 +199,7 @@
             </h4>
 
         </div>
-        <div class="item_row">
+        <div class="item_row" data-aos="fade-up" data-aos-duration="2500">
             <div class="img_box">
                 <img src="web-assets/images/icon/sustainable-growth.png" alt="">
             </div>
@@ -197,132 +210,66 @@
     </div>
     <section>
         <div class="containerFull">
-            <h4 class="heading h_underline fontWeight700">
+            <h4 class="heading h_underline fontWeight700" data-aos="fade-right" data-aos-duration="1000">
                 Businesses Units
             </h4>
+            <h5 class="sub_heading fontWeight700 mt-5" data-aos="fade-right" data-aos-duration="1000">
+                <i class="fa-solid fa-angles-right me-2"></i>Flow Solutions Products for Oil & Gas, Power and Steel
+                Industry
+            </h5>
 
 
+            <div class="business_grid mt-4">
 
-            <div class="business_grid mt-5">
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Ball Valves
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Butterfly Valves
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Gate Valves
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Globe Valves
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Check Valves
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Control & Relief Valves
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Actuators and Controls
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
-                <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Actuated Industrial Dampeners
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div>
 
-                <!-- <div class="item_grid shadow">
-                    <div class="img_box">
-                        <img src="web-assets/images/ball-valves.jpg" alt="">
+                <?php foreach ($items as $item): ?>
+                    <div class="item_grid shadow" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="item_grid_inner">
+                            <div class="img_box">
+                                <img src="<?= $item['image'] ?>" alt="">
+                            </div>
+                            <div class="content">
+                                <h5 class="h_underline">
+                                    <?= $item['title'] ?>
+                                </h5>
+                                <p class="mt-4">
+                                    <?= $item['description'] ?>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <h5 class="h_underline">
-                            Expansion joints and bellows
-                        </h5>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet, con ectetur a suhg vuihs
-                        </p>
-                    </div>
-                </div> -->
+                <?php endforeach; ?>
             </div>
+
+
+            <h5 class="sub_heading fontWeight700 mt80" data-aos="fade-right" data-aos-duration="1000">
+                <i class="fa-solid fa-angles-right me-2"></i>Flow Solutions Products for Oil & Gas, Power and Steel
+                Industry
+            </h5>
+
+
+            <div class="business_grid mt-4">
+
+
+                <?php foreach ($items as $item): ?>
+                    <div class="item_grid shadow" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="item_grid_inner">
+                            <div class="img_box">
+                                <img src="<?= $item['image'] ?>" alt="">
+                            </div>
+                            <div class="content">
+                                <h5 class="h_underline">
+                                    <?= $item['title'] ?>
+                                </h5>
+                                <p class="mt-4">
+                                    <?= $item['description'] ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
 
         </div>
 
@@ -371,7 +318,7 @@
                                     <div class="icon-detail">
                                         <h5 class="title fontWeight700">Email</h5>
                                         <p class="mt-2"><a class="text-black" href="#">example@rediffmail.com</a></p>
-                                      
+
                                     </div>
                                 </div>
                             </li>
@@ -410,7 +357,7 @@
                                     <div class="mb-lg-3 mb-2  form-input">
                                         <input type="text" class="form-control" placeholder="E-mail" required="">
                                     </div>
-                            
+
                                     <div class="mb-3 col-12 form-input">
                                         <textarea class="form-control">Write a massage...</textarea>
                                     </div>
@@ -432,6 +379,7 @@
 
     <?php include 'include/footer.php'; ?>
     <?php include 'include/footer-script.php'; ?>
+
 
     <script type="text/javascript">
         Fancybox.bind("[data-fancybox]", {});

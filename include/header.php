@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header stricky">
     <div class="containerFull">
 
         <div class="inline_header">

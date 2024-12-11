@@ -147,7 +147,7 @@ section {
 }
 
 .header {
-  position: relative;
+  position: absolute;
   z-index: 9;
   width: 100%;
   padding: 10px 0;
@@ -169,6 +169,13 @@ section {
   gap: 30px;
 }
 .nav_links ul li a {
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  padding: 5px 0;
+}
+.stricky-fixed .nav_links ul li a {
   color: #333;
   font-weight: 600;
   position: relative;
@@ -180,34 +187,34 @@ section {
   content: "";
   height: 2px;
   width: 0%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   z-index: 2;
   bottom: 0;
   left: 0;
   transition: all 0.4s ease-in-out;
 }
 .nav_links li a.active {
-  color: var(--primary-color);
+  color: var(--secondary-color) !important;
 }
 .nav_links li a.active::after {
   position: absolute;
   content: "";
   height: 2px;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   z-index: 2;
   bottom: 0;
   left: 0;
 }
 .nav_links li a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color) !important;
 }
 .nav_links li a:hover::after {
   position: absolute;
   content: "";
   height: 2px;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   z-index: 2;
   bottom: 0;
   left: 0;
@@ -450,7 +457,7 @@ footer {
   background-size: cover;
 }
 .banner_home_inner {
-  min-height: calc(100vh - 86px);
+  min-height: 100vh;
   display: flex;
   /* padding-bottom: 20px; */
   justify-content: center;
@@ -462,17 +469,20 @@ footer {
     color: #fff;
   }
 }
-.banner_slider {
+.banner_slider,
+.banner_video {
   top: 0;
   position: absolute;
   width: 100%;
-  height: calc(100vh - 86px);
+  height: 100vh;
   z-index: -2;
   mix-blend-mode: multiply;
 }
-.banner_slider img {
+.banner_slider img,
+.banner_video video {
+  width: 100%;
   object-fit: cover;
-  height: calc(100vh - 86px);
+  height: 100vh;
 }
 
 /* about */
@@ -557,13 +567,13 @@ footer {
   background-image: url(../images/core.jpg);
 }
 .core_values .item_row:nth-child(2) {
-  background-image: url(../images/core2\ \(1\).jpg);
+  background-image: url(../images/core2\\(1\).jpg);
 }
 .core_values .item_row:nth-child(3) {
-  background-image: url(../images/core2\ \(2\).jpg);
+  background-image: url(../images/core2\\(2\).jpg);
 }
 .core_values .item_row:nth-child(4) {
-  background-image: url(../images/core2\ \(3\).jpg);
+  background-image: url(../images/core2\\(3\).jpg);
 }
 
 .business_grid {
@@ -591,24 +601,29 @@ footer {
   object-fit: cover;
   transition: all 0.5s ease-in-out;
 }
+.item_grid_inner{
+  transition: all .3s ease-in-out;
+}
 .business_grid .item_grid:hover {
-  background-color: var(--secondary-color);
+  & .item_grid_inner {
+    background-color: var(--secondary-color);
+  }
   & .img_box img {
     transform: scale(1.1);
   }
 }
 
-
-
 /* contact */
-.contact-form, .shortBanner, .shortBanner-2 {
+.contact-form,
+.shortBanner,
+.shortBanner-2 {
   background: rgb(77, 3, 3);
   background: linear-gradient(
-    180deg,
-    rgba(77, 3, 3, 0.7418942577030813) 55%,
-    rgba(77, 3, 3, 0.4418942577030813) 100%
-  ),
-  url(../images/factory-workshop-interior-machines-glass-industry-background-process-production.jpg);
+      180deg,
+      rgba(77, 3, 3, 0.7418942577030813) 55%,
+      rgba(77, 3, 3, 0.4418942577030813) 100%
+    ),
+    url(../images/factory-workshop-interior-machines-glass-industry-background-process-production.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -625,10 +640,16 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  
 }
-.contact-section .form-container{
+.contact-section .form-container {
   padding: 50px;
   background-color: #ffffff50;
   backdrop-filter: blur(5px);
+}
+
+
+/* bussness unit */
+
+.mt80{
+  margin-top: 80px;
 }
